@@ -12,7 +12,7 @@ The goals / steps of this project are the following:
 [car]: ./writeup_images/car_image.png
 [notcar]: ./writeup_images/notcar_image.png
 [hog]: ./writeup_images/hog_features.png
-[slide]: ./writeup_images/sliding_window.jpg
+[slide]: ./writeup_images/sliding_window.png
 [heatmaps]: ./writeup_images/heatmaps.png
 [combined]: ./writeup_images/combined_bboxes.png
 [video1]: ./finalt_video.mp4
