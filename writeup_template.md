@@ -123,3 +123,7 @@ I then generated another video with the boxes and the heatmap side by side.
 One thing that my pipeline is not able to do is identify different cars in an image. If I had implemented a class to average the position of the cars found I would probably be able to do that. One time during the video, bounding boxes from different cars merged together. I saw a video from another student where he managed to do that.
 
 This approach would help even more to prevent false positives.
+
+---
+
+This is the edited version following the [revisions](https://review.udacity.com/#!/reviews/630509). The first version can be found [here](https://github.com/lealldiogo/CarND-Vehicle-Detection)
