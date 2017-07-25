@@ -15,6 +15,7 @@ The goals / steps of this project are the following:
 [slide]: ./writeup_images/sliding_window.png
 [heatmaps]: ./writeup_images/heatmaps.png
 [combined]: ./writeup_images/combined_bboxes.png
+[vidout]: ./writeup_images/vidout.png
 [video1]: ./finalt_video.mp4
 
 ## Rubric Points
@@ -105,7 +106,13 @@ Here's a [link to my video result](./final_video.mp4)
 
 I recorded the positions of positive detections in each frame of the video.  From the positive detections I created a heatmap and then thresholded that map to identify vehicle positions.  I then used `scipy.ndimage.measurements.label()` to identify individual blobs in the heatmap.  I then assumed each blob corresponded to a vehicle.  I constructed bounding boxes to cover the area of each blob detected.
 
-I also applied the same threshold I tested on the images to the video. The pipeline with the threshold performed much better and there were nearly no false positives. The `apply_threshold()` is defined on the 11th code cell.
+I also applied the same threshold I tested on the images to the video. The pipeline with the threshold performed much better and there were nearly no false positives. The `apply_threshold()` is defined on the 12th code cell.
+
+As suggested on the review, I stored the heatmaps on a `deque` of `max_len` 10 and averaged them to smooth the drawing boxes for every 10 frames. That was done in the 11th code cell and implemented on the 12th as well.
+
+I then generated another video with the boxes and the heatmap side by side.
+
+![alt_text][vidout]
 
 ---
 
